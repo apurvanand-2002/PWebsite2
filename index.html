@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurv's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95ff37d342.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ------------header--------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p>Apurv's Portfolio</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <!-- --------SOME CHANGING ANIMATIONS----------- -->
+            <div class="header-text">
+                <p>Student at National Institute Of Technology, Silchar</p>
+                <h1>Hi, I am <span>Apurv Anand</span>.</h1>
+
+                <div class="cont">
+                    <h1>I am a <span class="auto-type"></span>.</h1>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["MERN Stack web developer", "Programmer", "Competitive coder", "ML and AI Enthusiast"],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        loop: true
+                    })
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Apurv Photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! My name is Apurv Anand, and I’m a third-year computer science student at National
+                        Institute Of Technology, Silchar, Assam. I’m interested in the field because it allows me to
+                        apply my math, science, and programming knowledge to solve exciting and valuable problems.
+                        I am also interested in the future of technology because even though computer technology has
+                        come a long way since I was a kid playing with basic calculators, there are still parts of our
+                        lives that depend on computers. I want to be able to help make those parts better!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br>
+                                Skilled in HTML, CSS, JavaScript, ReactJS, Bootstrap and WordPress.</li>
+                            <li><span>Backend Web Development</span><br>
+                                Have an experience of working with firebase and NodeJS in tha backend.</li>
+                            <li><span>Data Visualization and Analysis uing Databases</span><br>
+                                Skilled in MySQL & MongoDB. Also, have knowledge of python libraries like numpy, pandas,
+                                matplotlib etc along with other softwares like PowerBI to do better data visualization
+                                &
+                                trend analysis.
+                            </li>
+                            <li><span>UI/UX Designing</span><br>
+                                Skilled in Figma Software for creation of prototypes of UIs.</li>
+                            <li><span>Machine Learning & Deep Learning</span><br>
+                                Have the knowledge of basic ML algorithms like 'Gradient Descent Algorithm', 'K Nearest
+                                Neighbours' etc and Deep Learning basics like RNN, CNN, ANN etc.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023- July 2023</span><br>
+                                Web Developer Intern at Ampgate Analytics Pvt. Ltd.
+                                <br>Skills: Wordpress HTML CSS
+                            </li>
+                            <li><span>January 2023- March 2023</span><br>
+                                Web Developer Intern at Twilearn Edutech Pvt. Ltd. (Previously called as 'CollegeRankers
+                                Pvt. Ltd.')
+                                <br>Skills: HTML CSS JS Firebase
+                            </li>
+                            <li><span>October 2022- Present</span><br>
+                                ML Wing member at Computer Science Society(CSS), NIT Silchar
+                                <br>Skills: Machine Learning Deep Learning
+                            </li>
+                            <li><span>October 2022- Present</span><br>
+                                Core Member of Trading Club, NIT Silchar
+                                <br>Skills: Data Analysis
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>
+                                Pursuing Bachelor's degree in Computer Science & Engineering at National Institute Of
+                                Technology, Silchar, Assam<br>
+                                Current CGPA: 9.45 (Till end of 4th semester)</li>
+                            <li><span>2018 - 2020</span><br>
+                                Completed 11th and 12th standards at Riverdale High School, Aurangabad, Maharashtra<br>
+                                Grade in class-12 th: 96.2%</li>
+                            <li><span>2017 - 2018</span><br>
+                                Completed 10th standard at Podar International School, Aurangabad, Maharashtra<br>
+                                Grade in class-10 th: 96.6%</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>MERN Stack Web Developer</h2>
+                    <p>Available for all web development roles involving HTML, CSS, JS, ReactJS, NodeJS, ExpressJS,
+                        Wordpress, MYsql and MongoDB</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analyst & Scientist</h2>
+                    <p>Available for Data analyst & data scientists roles involving data analysis, pre-processing,
+                        cleaning, visualization, trend-analysis and predictions using ML & DL algorithms.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-researchgate"></i>
+                    <h2>Research Assistant</h2>
+                    <p>Have knowledge of ML & DL, thus, would like to contribute to the research of professors in
+                        the field of AI & ML.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h2>Resume Builder</h2>
+                    <p>Makes resume of individuals according to the templates already made and information given by the
+                        individuals.
+                        The registration and login systems' database & profile information is stored in MongoDB & local
+                        Storage so, that it can be accessed and edited easily.It is a MERN project.</p>
+                    <button><a
+                            href="https://drive.google.com/file/d/1WXZonGAccWb77ZhvdkrYPQSlQokQVbMl/view">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/RB">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Box-Office App</h2>
+                    <p>Used HTML, CSS, JS and ReactJS to make a website or an app that fetches the data from 'TV-Maze'
+                        API to tell about ones favourite shows and actors. The app is also installable on PC due to the
+                        use of service-workers and has been made after using various 'react-hooks'.</p>
+                    <button><a
+                            href="https://apurvanand-2002.github.io/BOX_OFFICE_APP_FINAL_DEPLOYMENT/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/BOX_OFFICE_APP_FINAL_DEPLOYMENT">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Tic Tac Toe Game</h2>
+                    <p>Used HTML, CSS, JS and ReactJs.Made using react hooks and hence, is capable of
+                        storing each-and-every movement of each player. It stores a history of moves and players can
+                        continue from any move in the stored history.Winner and winning pattern is highlighted.
+                    </p>
+                    <button><a href="http://apurvtictactoegame.surge.sh/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/Tic-Tac-Toe-Game">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>VidTube</h2>
+                    <br><br>
+                    <p>Using HTML, CSS & JS. Implemented the frontend of 'YouTube', thus, it is a youtube clone.This app
+                        matches exactly with the UI of Youtube and the first video of the interface is playable.
+                        All the basic frontend activities of YouTube are implmented here. <br><br></p>
+                    <button><a href="https://apurvanand-2002.github.io/VidTube/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/VidTube">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Portfolio Website</h2>
+                    <p>Used HTML, CSS & JS to make portfolio website. It includes introduction,education,
+                        work-experience, services,
+                        works and contact details of Apurv Anand who is a third year CSE student at NIT Silchar.</p>
+                    <br><br><br>
+                    <button><a href="https://apurvanand-2002.github.io/PWebsite/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/PWebsite">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Joke App</h2>
+                    <br><br>
+                    <p>Using HTML, CSS, JS, VoiceRSS API and JokeAPI, made this app. It speaks jokes related to field of
+                        CS. Joke API fetches the joke and VoiceRSS API converts Text-to-speech.The robot on the screen
+                        is gif image taken from 'Giphy'.<br><br><br></p><br><br><br>
+                    <button><a href="https://apurvanand-2002.github.io/Joke-App/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/Joke-App">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Quiz App</h2>
+                    <p>Used HTML, CSS, JS and ReactJS to make a website or an app that takes the quiz of the
+                        students.The questions are to be entered and correct answers are to be provided, and the app
+                        tells marks obtained corresponding to each and every student. Thousands of questions can be
+                        entered and accessed at one time.<br></p><br><br>
+                    <button><a href="https://github.com/apurvanand-2002/Quiz-APP-HTML-CSS-ReactJs">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Weather App</h2>
+                    <p>Used HTML, CSS, JS and RapidAPI to fetch the data corresponding to the present weather conditions
+                        at all places of the world. It tells temperature(max & min), wind speed & degrees, humidity etc.
+                        <br><br><br><br><br><br><br><br>
+                    </p>
+                    <button><a href="https://apurvanand-2002.github.io/Weather-App/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/Weather-App">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Move-Rest-Repeat</h2>
+                    <p>Made this website using 'Wordpress' and all the functionalities were implemented using
+                        'Elementor'. It is a website for a hypothetical company called 'Move-Rest-Repeat' which provides
+                        rejuvenating experience to the people by making them do the activities like hiking, cycling
+                        etc.<br><br>
+                    </p>
+                    <button><a href="https://github.com/apurvanand-2002/Move-Rest-Repeat-Website-using-Wordpress">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Image recognition Project</h2>
+                    <p>Used CNN models along with 'Data Augmentation' and 'Transfer Learning' Concepts on Kaggle 2013
+                        Cats & Dogs datasets to differentiate the images of cats from those of dogs.Used VGG16 CNN model
+                        and achieved 97.2% accuracy.</p>
+                    <button><a href="https://github.com/apurvanand-2002/Image-Recognition-Project">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Dashboard for Global SuperStore</h2>
+                    <p>Used PowerBI for data cleaning, dummy values generation, data pre-processing etc. Used pie-chart,
+                        donut-charts, ribbon charts, maps etc to make a dashboard for the overall revenue of global
+                        superstore.</p><br><br><br>
+                    <button><a
+                            href="https://github.com/apurvanand-2002/Dashboard-for-Global-Super-Store-using-Power-BI-">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Password Manager</h2>
+                    <p>The app manages passwords using MySQL database. NodeJS is used in the backend;HTML, CSS , JS
+                        & ReactJS is used in the frontend. The app encrypts each password acc to a token and then stores
+                        in DB so, it is not visible publically and decryption provides the required password.
+                    </p>
+                    <button><a
+                            href="https://github.com/apurvanand-2002/PASSWORD_MANAGER_USING_HTML_CSS_REACTJS_NODEJS_MYSQL">Github
+                            Repo</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        Contact Me
+                    </h1>
+                    <p><i class="fa-solid fa-envelope"></i> apurvanand.2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8459076922</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/apurv-anand-634b21227/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/apurvanand-2002"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <button class="btn btn2"><a href="./images/Apurv_Anand_Resume.pdf" download="">Download
+                            Resume</a></button>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Apurv Anand. Last updated on 25/07/2023.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwoidgsdbdNL9zcfGPD1i37P6k0hoZ_kKIhjzxu_xhn9LjzC75SBRU4CBK5j7yw9GYl/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
